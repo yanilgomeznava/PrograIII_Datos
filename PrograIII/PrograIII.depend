@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1432130399 source:c:\users\luis\documents\github\prograiii_datos\prograiii\main.cpp
+	<iostream>
+	<winbgim.h>
+	"DLinkedList.h"
+
+1431723364 c:\users\luis\documents\github\prograiii_datos\prograiii\dlinkedlist.h
+	<stdexcept>
+	<iostream>
+	"DNode.h"
+
+1431723364 c:\users\luis\documents\github\prograiii_datos\prograiii\dnode.h
+
