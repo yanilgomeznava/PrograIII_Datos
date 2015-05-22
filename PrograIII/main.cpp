@@ -18,20 +18,52 @@ int main()
     int filasActual = 0;
     int columnas = 0;
     int filas = 0;
+    int tamanoGrafo = 0;
 
     while(i == 0)
     {
         columnasActual = X_INICIAL * contador;
         filasActual = Y_INICIAL * contador;
+        tamanoGrafo = columnasActual * filasActual;
 
-        grafo = new DLinkedList<int>[columnasActual * filasActual];
+        grafo = new DLinkedList<int>[tamanoGrafo];
+
+        for(int i = 0; i < tamanoGrafo; i++)
+        {
+            if(0 < i && i < columnasActual)
+            {
+                grafo[i].insert(i - 1);
+                grafo[i].insert(i + 1);
+                grafo[i].insert(i + columnasActual);
+            }
+            else if((tamanoGrafo - columnasActual) < i && i < tamanoGrafo)
+            {
+                grafo[i].insert(i - 1);
+                grafo[i].insert(i + 1);
+                grafo[i].insert(i - columnasActual);
+            }
+            else if(i % 4 == 0)
+            {
+                grafo[i].insert(i + 1);
+                grafo[i].insert(i + columnasActual);
+            }
+            else if((i + 1) % 4 == 0)
+            {
+                grafo[i].insert(i - 1);
+                grafo[i].insert(i + columnasActual);
+            }
+            else
+            {
+                grafo[i].insert(i + 1);
+                grafo[i].insert(i - 1);
+                grafo[i].insert(i + columnasActual);
+                grafo[i].insert(i - columnasActual);
+            }
+        }
 
         initwindow(columnasActual, filasActual);
-        columnas = columnasActual / X_INICIAL;
-        filas = filasActual / Y_INICIAL;
+        circle(2, 2, 1);
         cout << columnas << " - " << filas << endl;
-
-        circle(columnasActual / 2, filasActual / 2, 1);
 
 
         delete [] grafo;
