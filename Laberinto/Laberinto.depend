@@ -1,0 +1,59 @@
+# depslib dependency file v1.0
+1402960835 source:c:\users\bernal\dropbox\progra 2 datos laberinto\laberinto\main.cpp
+	<iostream>
+	<Grafo.h>
+	<iostream>
+	<winbgim.h>
+	<stdio.h>
+	<sstream>
+	<stdlib.h>
+	<ctime>
+	<unistd.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1402955110 source:c:\users\bernal\dropbox\progra 2 datos laberinto\laberinto\src\grafo.cpp
+	"Grafo.h"
+	<Matrix.h>
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<ctime>
+
+1402954704 c:\users\bernal\dropbox\progra 2 datos laberinto\laberinto\include\grafo.h
+
+1402792824 source:c:\users\bernal\dropbox\progra 2 datos laberinto\laberinto\src\matrix.cpp
+	"Matrix.h"
+
+1402794258 c:\users\bernal\dropbox\progra 2 datos laberinto\laberinto\include\matrix.h
+
+1402960835 source:c:\users\luis\downloads\laberinto\main.cpp
+	<iostream>
+	<Grafo.h>
+	<iostream>
+	<winbgim.h>
+	<stdio.h>
+	<sstream>
+	<stdlib.h>
+	<ctime>
+	<unistd.h>
+	<dos.h>
+	<stdio.h>
+	<conio.h>
+
+1402954704 c:\users\luis\downloads\laberinto\include\grafo.h
+
+1402955110 source:c:\users\luis\downloads\laberinto\src\grafo.cpp
+	"Grafo.h"
+	<Matrix.h>
+	<iostream>
+	<sstream>
+	<stdlib.h>
+	<ctime>
+
+1402794258 c:\users\luis\downloads\laberinto\include\matrix.h
+
+1402792824 source:c:\users\luis\downloads\laberinto\src\matrix.cpp
+	"Matrix.h"
+

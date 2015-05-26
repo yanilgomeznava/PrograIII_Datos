@@ -1,5 +1,6 @@
 #include <iostream>
 #include <winbgim.h>
+#include <graphics.h>
 #include "DLinkedList.h"
 
 using namespace std;
@@ -65,7 +66,7 @@ int main()
         initwindow(columnasActual, filasActual);
 
         circle(20, 20, 10);
-        cout << getactivepage() << " - " << getvisualpage() <<  endl;
+        cout << getactivepage() << " - " << getvisualpage() << getcurrentwindow() << endl;
 
 
         delete [] grafo;
