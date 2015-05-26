@@ -1,14 +1,19 @@
 #include <iostream>
 #include <winbgim.h>
-#include <graphics.h>
 #include "DLinkedList.h"
 
 using namespace std;
+
+dibujarLaberinto(*DLinkedList<int> grafo)
+{
+
+}
 
 int main()
 {
     int X_INICIAL = 50;
     int Y_INICIAL = 25;
+    initwindow(Y_INICIAL, X_INICIAL);
 
     DLinkedList<int> *grafo;
 
@@ -63,16 +68,11 @@ int main()
             }
         }
 
-        initwindow(columnasActual, filasActual);
-
-        circle(20, 20, 10);
-        cout << getactivepage() << " - " << getvisualpage() << getcurrentwindow() << endl;
-
 
         delete [] grafo;
         cin >> i;
         contador ++;
-        closegraph();
+        cleardevice();
     }
 
     return 0;
