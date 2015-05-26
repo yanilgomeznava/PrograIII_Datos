@@ -13,6 +13,7 @@ int main()
 
     int i=0;
     int contador = 1;
+    int currentWindow;
 
     int columnasActual = 0;
     int filasActual = 0;
@@ -62,8 +63,9 @@ int main()
         }
 
         initwindow(columnasActual, filasActual);
-        circle(2, 2, 1);
-        cout << columnas << " - " << filas << endl;
+
+        circle(20, 20, 10);
+        cout << getactivepage() << " - " << getvisualpage() <<  endl;
 
 
         delete [] grafo;
